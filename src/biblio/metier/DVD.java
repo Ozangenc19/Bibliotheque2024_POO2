@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import static biblio.metier.TypeOuvrage.DVD;
 
 public class DVD extends Ouvrage{
 
@@ -12,8 +13,8 @@ public class DVD extends Ouvrage{
     private byte nbreBonus;
     private List<String> autresLangues=new ArrayList<>();
     private List<String> sousTitres=new ArrayList<>();
-    public DVD(String titre, int ageMin, LocalDate dateParution, TypeOuvrage to, double prixLocation, String langue, String genre, long code, String dureeTotale, byte nbreBonus) {
-        super(titre, ageMin, dateParution, to, prixLocation, langue, genre);
+    public DVD(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre, long code, String dureeTotale, byte nbreBonus) {
+        super(titre, ageMin, dateParution, DVD, prixLocation, langue, genre);
         this.code=code;
         this.dureeTotale=dureeTotale;
         this.nbreBonus=nbreBonus;
@@ -81,5 +82,10 @@ public class DVD extends Ouvrage{
                 ", autresLangues=" + autresLangues +
                 ", sousTitres=" + sousTitres +
                 "} " + super.toString();
+    }
+    @Override
+    public double amendeRetard(int njours) {
+        //TODO amendeRetard DVD
+        return 0;
     }
 }

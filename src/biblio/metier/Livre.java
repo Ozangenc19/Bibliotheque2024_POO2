@@ -3,6 +3,8 @@ package biblio.metier;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import static biblio.metier.TypeOuvrage.LIVRE;
+
 public class Livre extends Ouvrage{
     private String isbn;
     private int nbrePages;
@@ -10,8 +12,9 @@ public class Livre extends Ouvrage{
     private String resume;
 
 
-    public Livre(String titre, int ageMin, LocalDate dateParution, TypeOuvrage to, double prixLocation, String langue, String genre, String isbn, int nbrePages, TypeLivre tl, String resume) {
-        super(titre, ageMin, dateParution, to, prixLocation, langue, genre);
+
+    public Livre(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre,String isbn,int nbrePages,TypeLivre tl,String resume) {
+        super(titre, ageMin, dateParution,LIVRE, prixLocation, langue, genre);
         this.isbn=isbn;
         this.nbrePages=nbrePages;
         this.tl=tl;
@@ -65,11 +68,16 @@ public class Livre extends Ouvrage{
 
     @Override
     public String toString() {
-        return "Livre{" +
+        return super.toString()+ "Livre{" +
                 "isbn='" + isbn + '\'' +
                 ", nbrePages=" + nbrePages +
                 ", tl=" + tl +
                 ", resume='" + resume + '\'' +
-                '}';
+                "} " + super.toString();
+    }
+    @Override
+    public double amendeRetard(int njours) {
+        //TODO amendeRetard livre
+        return 0;
     }
 }

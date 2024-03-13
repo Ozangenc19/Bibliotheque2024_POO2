@@ -4,26 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EnonceV1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/Gestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Auteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/CD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/DVD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Exemplaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Lecteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Livre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Ouvrage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/Rayon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/TypeLivre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/biblio/metier/TypeOuvrage.java" afterDir="false" />
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="Premier commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/Gestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Auteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Auteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/CD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/CD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/DVD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/DVD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Exemplaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Exemplaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Lecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Lecteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Livre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Ouvrage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Ouvrage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/biblio/metier/Rayon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/biblio/metier/Rayon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +73,26 @@
       <workItem from="1707907816436" duration="733000" />
       <workItem from="1707908576448" duration="1375000" />
       <workItem from="1707934191239" duration="264000" />
-      <workItem from="1708510417127" duration="3662000" />
+      <workItem from="1708510417127" duration="4293000" />
+      <workItem from="1708519206140" duration="28000" />
+      <workItem from="1710327305686" duration="1177000" />
     </task>
+    <task id="LOCAL-00001" summary="Premier commit">
+      <option name="closed" value="true" />
+      <created>1708514658884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708514658884</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Premier commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Premier commit" />
   </component>
 </project>

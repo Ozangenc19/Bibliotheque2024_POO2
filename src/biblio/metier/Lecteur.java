@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class Lecteur {
+    private static int numact=1;
     private int numlecteur;
     private  String nom,prenom;
     private LocalDate dn;
@@ -16,7 +17,7 @@ public class Lecteur {
     private List<Location> lloc=new ArrayList<>();
 
     public Lecteur(String nom, String prenom, LocalDate dn, String adresse, String mail, String tel) {
-        this.numlecteur = numlecteur;
+        this.numlecteur = numact++;
         this.nom = nom;
         this.prenom = prenom;
         this.dn = dn;
@@ -113,5 +114,16 @@ public class Lecteur {
     @Override
     public int hashCode() {
         return Objects.hash(numlecteur);
+    }
+
+
+    public List<biblio.metier.Exemplaire> listerExemplairesEnLocation(){
+        //TODO lister exemplaires en location lecteur
+        return null;
+    }
+
+    public List<biblio.metier.Exemplaire> listerExemplairesEnLoues(){
+        //TODO lister exemplaires loues lecteur
+        return null;
     }
 }

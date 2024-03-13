@@ -13,8 +13,8 @@ public abstract class Ouvrage {
     protected String langue;
     protected String genre;
 
-    protected List<Auteur> lauteurs=new ArrayList<>();
-    protected List<Exemplaire> lex = new ArrayList<>();
+    protected List<biblio.metier.Auteur> lauteurs=new ArrayList<>();
+    protected List<biblio.metier.Exemplaire> lex = new ArrayList<>();
 
 
     public Ouvrage(String titre, int ageMin, LocalDate dateParution, TypeOuvrage to, double prixLocation, String langue, String genre) {
@@ -83,19 +83,19 @@ public abstract class Ouvrage {
         this.genre = genre;
     }
 
-    public List<Auteur> getLauteurs() {
+    public List<biblio.metier.Auteur> getLauteurs() {
         return lauteurs;
     }
 
-    public void setLauteurs(List<Auteur> lauteurs) {
+    public void setLauteurs(List<biblio.metier.Auteur> lauteurs) {
         this.lauteurs = lauteurs;
     }
 
-    public List<Exemplaire> getLex() {
+    public List<biblio.metier.Exemplaire> getLex() {
         return lex;
     }
 
-    public void setLex(List<Exemplaire> lex) {
+    public void setLex(List<biblio.metier.Exemplaire> lex) {
         this.lex = lex;
     }
 
@@ -109,8 +109,34 @@ public abstract class Ouvrage {
                 ", prixLocation=" + prixLocation +
                 ", langue='" + langue + '\'' +
                 ", genre='" + genre + '\'' +
-                ", lauteurs=" + lauteurs +
-                ", lex=" + lex +
                 '}';
+    }
+    public abstract double amendeRetard(int njours);
+    public void addAuteur(biblio.metier.Auteur a ){
+        lauteurs.add(a);
+        a.getLouvrage().add(this);
+    }
+
+    public void remove(biblio.metier.Auteur a){
+        lauteurs.remove(a);
+        a.getLouvrage().remove(this);
+    }
+    public void addExemplaire(biblio.metier.Exemplaire e){
+        lex.add(e);
+        e.setOuvrage(this);
+    }
+
+    public void remove(biblio.metier.Exemplaire e){
+        lex.remove(e);
+        e.setOuvrage(null);
+    }
+    public List<biblio.metier.Exemplaire>listerExemplaires(){
+        //TODO lister exemplaires ouvrage
+        return null;
+    }
+
+    public List<biblio.metier.Exemplaire>listerExemplaires(boolean enLocation){
+        //TODO lister exemplaires ouvrage en location
+        return null;
     }
 }

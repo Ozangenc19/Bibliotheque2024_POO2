@@ -1,13 +1,11 @@
 package biblio.metier;
 
-import java.time.LocalDateTime;
-
 public class Mail {
     private String objet;
     private String message;
-    private LocalDateTime dateEnvoi;
+    private String dateEnvoi;
 
-    public Mail(String objet, String message, LocalDateTime dateEnvoi) {
+    public Mail(String objet, String message, String dateEnvoi) {
         this.objet = objet;
         this.message = message;
         this.dateEnvoi = dateEnvoi;
@@ -29,11 +27,11 @@ public class Mail {
         this.message = message;
     }
 
-    public LocalDateTime getDateEnvoi() {
+    public String getDateEnvoi() {
         return dateEnvoi;
     }
 
-    public void setDateEnvoi(LocalDateTime dateEnvoi) {
+    public void setDateEnvoi(String dateEnvoi) {
         this.dateEnvoi = dateEnvoi;
     }
 
@@ -42,7 +40,7 @@ public class Mail {
         return "Mail{" +
                 "objet='" + objet + '\'' +
                 ", message='" + message + '\'' +
-                ", dateEnvoi=" + dateEnvoi +
+                ", dateEnvoi='" + dateEnvoi + '\'' +
                 '}';
     }
 }

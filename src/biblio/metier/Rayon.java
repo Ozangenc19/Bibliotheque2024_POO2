@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Rayon {
     private String codeRayon;
     private String genre;
-    private List<Exemplaire> lex = new ArrayList<>();
+    private List<biblio.metier.Exemplaire> lex = new ArrayList<>();
 
     public Rayon(String codeRayon, String genre) {
         this.codeRayon = codeRayon;
@@ -51,11 +51,11 @@ public class Rayon {
         this.genre = genre;
     }
 
-    public List<Exemplaire> getLex() {
+    public List<biblio.metier.Exemplaire> getLex() {
         return lex;
     }
 
-    public void setLex(List<Exemplaire> lex) {
+    public void setLex(List<biblio.metier.Exemplaire> lex) {
         this.lex = lex;
     }
 
