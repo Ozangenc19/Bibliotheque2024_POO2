@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="deuxieme commit">
-      <change afterPath="$PROJECT_DIR$/src/myconnections/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myconnections/ODBCConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="apres correction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/genc0/OneDrive/Bureau/BAC 2 Q2/POO2/ExerciceEnClasse/EnonceV1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/genc0/OneDrive - HEPH-Condorcet/Bureau/BAC 2 Q2/POO2/ExerciceEnClasse/EnonceV1/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -53,6 +52,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\genc0\OneDrive - HEPH-Condorcet\Bureau\BAC 2 Q2\POO2\ExerciceEnClasse\EnonceV1\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,6 +72,11 @@
       <workItem from="1708519206140" duration="28000" />
       <workItem from="1710327305686" duration="1941000" />
       <workItem from="1710491887559" duration="1925000" />
+      <workItem from="1710932578457" duration="1454000" />
+      <workItem from="1710936450400" duration="1427000" />
+      <workItem from="1710937920086" duration="227000" />
+      <workItem from="1710955499095" duration="16000" />
+      <workItem from="1710964903331" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -85,7 +94,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710328523548</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="avant correction">
+      <option name="closed" value="true" />
+      <created>1710932604604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710932604604</updated>
+    </task>
+    <task id="LOCAL-00004" summary="avant correction">
+      <option name="closed" value="true" />
+      <created>1710932668983</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710932668983</updated>
+    </task>
+    <task id="LOCAL-00005" summary="apres correction">
+      <option name="closed" value="true" />
+      <created>1710932800977</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710932800977</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +127,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Premier commit" />
     <MESSAGE value="deuxieme commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="deuxieme commit" />
+    <MESSAGE value="avant correction" />
+    <MESSAGE value="apres correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="apres correction" />
   </component>
 </project>

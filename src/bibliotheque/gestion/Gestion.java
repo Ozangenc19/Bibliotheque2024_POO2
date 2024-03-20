@@ -157,6 +157,10 @@ public class Gestion {
         Exemplaire ex = new Exemplaire(mat,etat,louv.get(choix-1));
         lex.add(ex);
         System.out.println("exemplaire créé");
+        /*---------------------AJOUT-----------------------*/
+        int choixrayon = Utilitaire.choixListe(lrayon);
+        Rayon ray = lrayon.get(choixrayon - 1);
+        ex.setRayon(ray);
         //TODO attribuer rayon
     }
 
@@ -226,10 +230,15 @@ public class Gestion {
             }
            louv.add(o);
         System.out.println("ouvrage créé");
+        /*---------------------AJOUT-----------------------*/
+        int choixauteur = Utilitaire.choixListe(laut);
+        Auteur aut = laut.get(choixauteur - 1);
+        o.addAuteur(aut);
         //TODO ajouter 1 auteur à la liste des auteurs
     }
 
-       private void gestAuteurs() {
+
+    private void gestAuteurs() {
         System.out.println("nom ");
         String nom=sc.nextLine();
         System.out.println("prénom ");
