@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="fin de 4 TODO sur 6 ( à finir)">
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="MAJ projet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Auteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Auteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\genc0\OneDrive - HEPH-Condorcet\Bureau\BAC 2 Q2\POO2\ExerciceEnClasse\EnonceV1\src" />
+      <recent name="C:\Users\genc0\OneDrive - HEPH-Condorcet\Bureau\BAC 2 Q2\POO2\ExerciceEnClasse\EnonceV1\src\bibliotheque" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,6 +81,9 @@
       <workItem from="1710955499095" duration="16000" />
       <workItem from="1710964903331" duration="806000" />
       <workItem from="1711095922890" duration="27000" />
+      <workItem from="1711536784681" duration="1633000" />
+      <workItem from="1711621376351" duration="16000" />
+      <workItem from="1712054646231" duration="962000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -125,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710965686624</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="MAJ projet">
+      <option name="closed" value="true" />
+      <created>1711536873052</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711536873052</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +153,7 @@
     <MESSAGE value="avant correction" />
     <MESSAGE value="apres correction" />
     <MESSAGE value="fin de 4 TODO sur 6 ( à finir)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin de 4 TODO sur 6 ( à finir)" />
+    <MESSAGE value="MAJ projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ projet" />
   </component>
 </project>
