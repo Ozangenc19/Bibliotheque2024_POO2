@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="MAJ projet">
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="Fin des TODO (classe metier)">
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/OuvrageComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Auteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Auteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,8 @@
       <workItem from="1711095922890" duration="27000" />
       <workItem from="1711536784681" duration="1633000" />
       <workItem from="1711621376351" duration="16000" />
-      <workItem from="1712054646231" duration="962000" />
+      <workItem from="1712054646231" duration="1958000" />
+      <workItem from="1712072155021" duration="2270000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -141,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711536873052</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fin des TODO (classe metier)">
+      <option name="closed" value="true" />
+      <created>1712055645810</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712055645810</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +161,7 @@
     <MESSAGE value="apres correction" />
     <MESSAGE value="fin de 4 TODO sur 6 ( à finir)" />
     <MESSAGE value="MAJ projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAJ projet" />
+    <MESSAGE value="Fin des TODO (classe metier)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fin des TODO (classe metier)" />
   </component>
 </project>
