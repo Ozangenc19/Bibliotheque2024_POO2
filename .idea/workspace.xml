@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="Fin des TODO (classe metier)">
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/OuvrageComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="Fin des TODO">
       <change beforePath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +80,7 @@
       <workItem from="1711536784681" duration="1633000" />
       <workItem from="1711621376351" duration="16000" />
       <workItem from="1712054646231" duration="1958000" />
-      <workItem from="1712072155021" duration="2270000" />
+      <workItem from="1712072155021" duration="2572000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -148,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712055645810</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fin des TODO">
+      <option name="closed" value="true" />
+      <created>1712074612508</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712074612508</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +168,7 @@
     <MESSAGE value="fin de 4 TODO sur 6 ( à finir)" />
     <MESSAGE value="MAJ projet" />
     <MESSAGE value="Fin des TODO (classe metier)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fin des TODO (classe metier)" />
+    <MESSAGE value="Fin des TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fin des TODO" />
   </component>
 </project>

@@ -212,6 +212,9 @@ public class Gestion {
         //TODO attribuer par une boucle plusieurs exemplaires, les exemplaires sont triés par ordre de titre de l'ouvrage ,
         //  ne proposer que les exemplaires qui ne sont pas dans déjà présents dans ce rayon et qui ne sont dans aucun autre rayon
 
+
+
+
         System.out.println("code ");
         String code = sc.next();
         System.out.println("genre ");
