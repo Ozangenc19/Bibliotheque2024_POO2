@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="Fin des TODO">
       <change beforePath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <workItem from="1711536784681" duration="1633000" />
       <workItem from="1711621376351" duration="16000" />
       <workItem from="1712054646231" duration="1958000" />
-      <workItem from="1712072155021" duration="2572000" />
+      <workItem from="1712072155021" duration="2905000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -154,7 +155,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712074612508</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fin des TODO">
+      <option name="closed" value="true" />
+      <created>1712074762562</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712074762562</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fin des TODO">
+      <option name="closed" value="true" />
+      <created>1712074834981</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712074834981</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
