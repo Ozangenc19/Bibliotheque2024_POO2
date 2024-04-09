@@ -100,6 +100,31 @@ public class GestionOld {
 
     private void gestRestitution() {
         //TODO lister exemplaires en location , choisir l'un d'entre eux, enregistrer sa restitution et éventuellement changer état
+        Set<Exemplaire> loc = LOCATIONS.keySet();
+        List<Exemplaire> exemplaireEnLocation = new ArrayList<>();
+        for (Exemplaire ex : LOCATIONS.keySet()) {
+            exemplaireEnLocation.add(ex);
+        }
+        if (exemplaireEnLocation.isEmpty()){
+            System.out.println("Aucun exemplaire actuellement en location");
+            return;
+        }
+        System.out.println("Exemplaire en location : ");
+        int i = 1;
+        for (Exemplaire ex : exemplaireEnLocation) {
+            System.out.printf(i+". "+ex.getMatricule()+" - "+ex.getOuvrage().getTitre());
+            i++;
+        }
+
+        int choix = choixListe(exemplaireEnLocation);
+        if (choix == 0) {
+            return;
+        }
+        Exemplaire exRestitution = exemplaireEnLocation.get(choix - 1);
+        LOCATIONS.remove(exRestitution);
+        exRestitution.modifierEtat("en location");
+        System.out.println("Restitution enregistrée pour l'exemplaire : " + exRestitution.getMatricule());
+
     }
 
     private void gestLocations() {

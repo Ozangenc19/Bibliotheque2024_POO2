@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="Fin des TODO">
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/gestion/GestionOld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/GestionMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/AuteurController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/model/AuteurModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAOAuteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AbstractViewAuteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AuteurViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/AuteurComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/ExemplaireMatriculeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/ExemplaireTitreComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/RayonComparator.java" afterDir="false" />
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="MAJ du projet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/gestion/Gestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Exemplaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Exemplaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Location.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/CDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/CDFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/LivreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/LivreFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/OuvrageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/OuvrageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/Utilitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/Utilitaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/OuvrageComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/OuvrageComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/gestion/GestionOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/gestion/GestionOld.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,18 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ozangenc19"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ozangenc19&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ozangenc19/EnonceV1.git",
-    "accountId": "764ca0aa-2827-4727-9820-5cb7a9d8c3d8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ozangenc19/EnonceV1.git&quot;,
+    &quot;accountId&quot;: &quot;764ca0aa-2827-4727-9820-5cb7a9d8c3d8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -75,6 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GestionOld.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -91,6 +68,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ozant\OneDrive - HEPH-Condorcet\Bureau\BAC 2 Q2\POO2\ExerciceEnClasse\EnonceV1\src" />
+      <recent name="C:\Users\ozant\OneDrive - HEPH-Condorcet\Bureau\BAC 2 Q2\POO2\ExerciceEnClasse\EnonceV1\src\bibliotheque" />
       <recent name="C:\Users\genc0\OneDrive - HEPH-Condorcet\Bureau\BAC 2 Q2\POO2\ExerciceEnClasse\EnonceV1\src" />
       <recent name="C:\Users\genc0\OneDrive - HEPH-Condorcet\Bureau\BAC 2 Q2\POO2\ExerciceEnClasse\EnonceV1\src\bibliotheque" />
     </key>
@@ -130,7 +109,8 @@
       <workItem from="1712072155021" duration="3138000" />
       <workItem from="1712093667050" duration="577000" />
       <workItem from="1712130256461" duration="17000" />
-      <workItem from="1712666719467" duration="314000" />
+      <workItem from="1712666719467" duration="461000" />
+      <workItem from="1712667195934" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -244,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712094323526</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="MAJ du projet">
+      <option name="closed" value="true" />
+      <created>1712667082566</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712667082566</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +247,7 @@
     <MESSAGE value="MAJ projet" />
     <MESSAGE value="Fin des TODO (classe metier)" />
     <MESSAGE value="Fin des TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fin des TODO" />
+    <MESSAGE value="MAJ du projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ du projet" />
   </component>
 </project>
