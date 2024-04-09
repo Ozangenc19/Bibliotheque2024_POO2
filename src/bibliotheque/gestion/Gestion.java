@@ -13,7 +13,7 @@ import java.util.*;
 
 import static bibliotheque.utilitaires.Utilitaire.choixListe;
 
-public class GestionOld {
+public class Gestion {
     Scanner sc = new Scanner(System.in);
 //on a ôté static pour les listes qui n'est plus nécessaire
     private List<Auteur> laut = new ArrayList<>();
@@ -274,7 +274,7 @@ public class GestionOld {
     }
 
     public static void main(String[] args) {
-        GestionOld g = new GestionOld();
+        Gestion g = new Gestion();
         g.populate();
         g.menu();
     }
