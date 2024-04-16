@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="MAJ du projet" />
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="enoncé v2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +110,8 @@
       <workItem from="1712130256461" duration="17000" />
       <workItem from="1712666719467" duration="461000" />
       <workItem from="1712667195934" duration="2196000" />
-      <workItem from="1712693997479" duration="295000" />
+      <workItem from="1712693997479" duration="403000" />
+      <workItem from="1712738937682" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -238,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712669347336</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="enoncé v2">
+      <option name="closed" value="true" />
+      <created>1712694310676</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712694310676</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +265,7 @@
     <MESSAGE value="Fin des TODO (classe metier)" />
     <MESSAGE value="Fin des TODO" />
     <MESSAGE value="MAJ du projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAJ du projet" />
+    <MESSAGE value="enoncé v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="enoncé v2" />
   </component>
 </project>

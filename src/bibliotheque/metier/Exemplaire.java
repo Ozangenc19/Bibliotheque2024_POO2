@@ -2,7 +2,7 @@ package bibliotheque.metier;
 
 import java.util.Objects;
 
-import static bibliotheque.gestion.Gestion.LOCATIONS;
+import static bibliotheque.gestion.GestionOld.LOCATIONS;
 
 public class Exemplaire {
 
