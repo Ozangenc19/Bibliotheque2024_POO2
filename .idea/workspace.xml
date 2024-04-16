@@ -4,8 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="enoncé v2">
+    <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="maj projet">
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAOSpecialAuteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelAuteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelLecteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AbstractView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/GestionMVC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/controller/AuteurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/controller/LecteurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/controller/RayonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/model/DAOLecteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/model/DAORayon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/model/ModelLecteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/model/ModelRayon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/observer/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/view/AbstractViewLecteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/view/AbstractViewRayon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/view/AuteurViewConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/view/LecteurViewConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/view/RayonViewConsole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/gestion/GestionOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/gestion/GestionOld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/GestionMVC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/GestionMVC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/AuteurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/AuteurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/AuteurModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/model/ModelAuteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAOAuteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/model/DAOAuteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AbstractViewAuteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvcold/view/AbstractViewAuteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AuteurViewConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AuteurViewConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/CDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/CDFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/LivreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/LivreFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +146,8 @@
       <workItem from="1712667195934" duration="2196000" />
       <workItem from="1712693997479" duration="403000" />
       <workItem from="1712738937682" duration="14000" />
+      <workItem from="1713264854555" duration="127000" />
+      <workItem from="1713278652198" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -249,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712694310676</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="maj projet">
+      <option name="closed" value="true" />
+      <created>1713264975618</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713264975618</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +310,7 @@
     <MESSAGE value="Fin des TODO" />
     <MESSAGE value="MAJ du projet" />
     <MESSAGE value="enoncé v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="enoncé v2" />
+    <MESSAGE value="maj projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="maj projet" />
   </component>
 </project>

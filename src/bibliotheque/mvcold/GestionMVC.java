@@ -1,37 +1,33 @@
-    package bibliotheque.mvc;
+    package bibliotheque.mvcold;
 
     import bibliotheque.metier.Auteur;
-    import bibliotheque.metier.Exemplaire;
-    import bibliotheque.metier.Lecteur;
-    import bibliotheque.mvc.controller.AuteurController;
-    import bibliotheque.mvc.controller.Controller;
-    import bibliotheque.mvc.model.DAO;
-    import bibliotheque.mvc.model.ModelAuteur;
-    import bibliotheque.mvc.view.AbstractView;
-    import bibliotheque.mvc.view.AuteurViewConsole;
+    import bibliotheque.mvcold.controller.AuteurController;
+    import bibliotheque.mvcold.model.DAOAuteur;
+    import bibliotheque.mvcold.model.ModelAuteur;
+    import bibliotheque.mvcold.view.AbstractViewAuteur;
+    import bibliotheque.mvcold.view.AuteurViewConsole;
     import bibliotheque.utilitaires.Utilitaire;
 
     import java.util.Arrays;
-    import java.util.HashMap;
     import java.util.List;
 
     public class GestionMVC {
+        private DAOAuteur am;
+        private AbstractViewAuteur av;
+        private AuteurController ac;
 
-        private DAO<Auteur> am;
-        private AbstractView<Auteur> av;
-        private Controller<Auteur> ac;
-
-        public static final HashMap<Exemplaire,Lecteur> LOCATION = new HashMap<>();
 
         public void gestion(){
-            am = new ModelAuteur();
+
+            am = new ModelAuteur() {
+                @Override
+                public Auteur add(Auteur elt) {
+                    return super.add(elt);
+                }
+            };
             av = new AuteurViewConsole();
             ac = new AuteurController(am,av);//création et injection de dépendance
             am.addObserver(av);
-
-            //TODO créer les éléments relatifs aux autres classes
-
-            //TODO associer les vues entre elles pour exploiter leurs getAll()
 
     try {
         populate();
@@ -51,14 +47,13 @@
             }while(true);
         }
         public void populate()  {
+
             Auteur a = new Auteur("Verne", "Jules", "France");
             am.getAll().add(a);
             a = new Auteur("Spielberg", "Steven", "USA");
             am.getAll().add(a);
             a = new Auteur("Kubrick", "Stanley", "GB");
             am.getAll().add(a);
-            //TODO ajouter autres éléments, les associer entre eux et créer des locations
-
         }
 
         public static void main(String[] args) {
