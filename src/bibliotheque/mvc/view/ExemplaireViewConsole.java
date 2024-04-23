@@ -1,13 +1,11 @@
 package bibliotheque.mvc.view;
 
-import bibliotheque.metier.Exemplaire;
-import bibliotheque.metier.Mail;
-import bibliotheque.metier.Ouvrage;
-import bibliotheque.metier.Rayon;
+import bibliotheque.metier.*;
 import bibliotheque.mvc.GestionMVC;
 import bibliotheque.mvc.controller.ControllerSpecialExemplaire;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -102,11 +100,23 @@ public class ExemplaireViewConsole extends AbstractView<Exemplaire> {
                 System.out.println("ouvrage : ");
                 List<Ouvrage> lo = GestionMVC.ov.getAll();
                 //TODO présenter les ouvrages par ordre de titre ==> classe anonyme
+                lo.sort(new Comparator<Ouvrage>() {
+                    @Override
+                    public int compare(Ouvrage o1, Ouvrage o2) {
+                        return o1.getTitre().compareTo(o2.getTitre());
+                    }
+                });
                 int ch = choixListe(lo);
                 a = new Exemplaire(mat, descr,lo.get(ch-1));
                 System.out.println("rayon");
                 List<Rayon> lr = GestionMVC.rv.getAll();
                 //TODO présenter les rayons par ordre de code ==> classe anonyme
+                lr.sort(new Comparator<Rayon>() {
+                    @Override
+                    public int compare(Rayon o1, Rayon o2) {
+                        return o1.getCodeRayon().compareTo(o2.getCodeRayon());
+                    }
+                });
                 ch= choixListe(lr);
                 a.setRayon(lr.get(ch-1));
                 break;
@@ -151,10 +161,14 @@ public class ExemplaireViewConsole extends AbstractView<Exemplaire> {
 
     private void rendre(Exemplaire a) {
         GestionMVC.LOCATIONS.remove(a);
-   }
+    }
 
     private void louer(Exemplaire a) {
         //TODO chosir un lecteur et enregistrer la location dans LOCATIONS
+        List<Lecteur> le = GestionMVC.lv.getAll();
+        int choix = choixListe(le);
+        Lecteur l = le.get(choix - 1);
+        GestionMVC.LOCATIONS.put(a, l);
     }
 
 
