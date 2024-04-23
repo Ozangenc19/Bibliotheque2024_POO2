@@ -1,7 +1,8 @@
-package bibliotheque.mvcold.view;
+package bibliotheque.mvc.view;
 
 import bibliotheque.metier.Exemplaire;
 import bibliotheque.metier.Rayon;
+import bibliotheque.mvc.controller.ControllerSpecialRayon;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,13 +11,13 @@ import java.util.Scanner;
 import static bibliotheque.utilitaires.Utilitaire.*;
 
 
-public class RayonViewConsole extends AbstractViewRayon {
+public class RayonViewConsole extends AbstractView<Rayon> {
     Scanner sc = new Scanner(System.in);
 
 
     @Override
     public void menu() {
-        update(rayonController.getAll());
+        update(controller.getAll());
         List options = Arrays.asList("ajouter", "retirer", "rechercher","modifier","fin");
         do {
             int ch = choixListe(options);
@@ -48,7 +49,7 @@ public class RayonViewConsole extends AbstractViewRayon {
     private void retirer() {
         int nl = choixElt(la)-1;
         Rayon r = la.get(nl);
-        boolean ok = rayonController.remove(r);
+        boolean ok = controller.remove(r);
         if(ok) affMsg("rayon effacé");
         else affMsg("rayon non effacé");
     }
@@ -63,7 +64,7 @@ public class RayonViewConsole extends AbstractViewRayon {
             System.out.println("code du rayon :");
             String code= sc.nextLine();
             Rayon rech = new Rayon(code,"");
-            Rayon r = rayonController.search(rech);
+            Rayon r = controller.search(rech);
             if(r==null) affMsg("rayon inconnu");
             else {
                 affMsg(r.toString());
@@ -93,7 +94,7 @@ public class RayonViewConsole extends AbstractViewRayon {
     }
 
     public void listerExemplaires(Rayon r){
-        List<Exemplaire> le = rayonController.listerExemplaires(r);
+        List<Exemplaire> le = ((ControllerSpecialRayon)controller).listerExemplaires(r);
         affListe(le);
     }
 
@@ -111,7 +112,7 @@ public class RayonViewConsole extends AbstractViewRayon {
                 System.out.println("erreur :" + e);
             }
         }while(true);
-        rayonController.update(r);
+        controller.update(r);
    }
 
 
@@ -129,7 +130,7 @@ public class RayonViewConsole extends AbstractViewRayon {
                 System.out.println("une erreur est survenue : "+e.getMessage());
             }
         }while(true);
-        r=rayonController.add(r);
+        r=controller.add(r);
         affMsg("création du rayon : "+r);
     }
 

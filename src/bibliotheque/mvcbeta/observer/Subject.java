@@ -1,4 +1,4 @@
-package bibliotheque.mvcold.observer;
+package bibliotheque.mvcbeta.observer;
 
 import java.util.ArrayList;
 import java.util.List;

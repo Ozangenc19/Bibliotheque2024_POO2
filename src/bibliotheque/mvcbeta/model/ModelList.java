@@ -1,4 +1,4 @@
-package bibliotheque.mvc.model;
+package bibliotheque.mvcbeta.model;
 
 
 import java.util.ArrayList;
