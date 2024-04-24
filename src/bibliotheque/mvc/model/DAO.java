@@ -1,9 +1,9 @@
 package bibliotheque.mvc.model;
 
-import bibliotheque.mvcbeta.observer.Subject;
+
+import bibliotheque.mvc.observer.Subject;
 
 import java.util.List;
-
 public abstract class DAO<T> extends Subject {
 
     public abstract T add( T elt) ;
