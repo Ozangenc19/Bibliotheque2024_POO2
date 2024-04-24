@@ -2,39 +2,30 @@ package bibliotheque.utilitaires;
 
 
 import bibliotheque.metier.Ouvrage;
-import bibliotheque.metier.TypeOuvrage;
 
 import java.time.LocalDate;
 import java.util.Scanner;
 
+import static bibliotheque.utilitaires.Utilitaire.*;
+
 public  abstract class OuvrageFactory {
    protected Scanner sc= new Scanner(System.in);
+   public Ouvrage create() {
 
-    protected String titre;
-    protected int ageMin;
-    protected LocalDate dateParution;
-    protected TypeOuvrage to;
-    protected double prixLocation;
-    protected String langue;
-    protected String genre;
-
-   public void base() {
        System.out.println("titre");
-       titre= sc.nextLine();
+       String titre= sc.nextLine();
        System.out.println("age minimum");
-       ageMin= sc.nextInt();
-       sc.skip("\n");
+       int ageMin= lireInt();
        System.out.println("date de parution");
-
-       dateParution= Utilitaire.lecDate();
+       LocalDate dp= lecDate();
        System.out.println("prix de location");
-       prixLocation = sc.nextDouble();
-       sc.skip("\n");
+       double ploc = lireDouble();
        System.out.println("langue");
-       langue=sc.nextLine();
+       String langue=sc.nextLine();
        System.out.println("genre");
-       genre=sc.nextLine();
-   }
+       String genre=sc.nextLine();
+       return addDetail(titre, ageMin,dp,ploc, langue,  genre);
+    }
 
-    public abstract Ouvrage create();
+    public abstract Ouvrage addDetail(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre);
 }

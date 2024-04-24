@@ -1,10 +1,10 @@
 package bibliotheque.metier;
 
+
+
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public abstract class Ouvrage {
     protected String titre;
@@ -15,12 +15,12 @@ public abstract class Ouvrage {
     protected String langue;
     protected String genre;
 
-    protected Set<Auteur> lauteurs=new HashSet<>();
+    protected List<Auteur> lauteurs=new ArrayList<>();
+    protected List<Exemplaire> lex = new ArrayList<>();
 
-    protected Set<Exemplaire> lex = new HashSet<>();
 
-
-    public Ouvrage(String titre, int ageMin, LocalDate dateParution, TypeOuvrage to, double prixLocation, String langue, String genre) {
+    public Ouvrage(String titre, int ageMin, LocalDate dateParution, TypeOuvrage to, double prixLocation, String langue, String genre)throws Exception {
+       if(titre==null || titre.trim().equals("")) throw new Exception("titre invalide");
         this.titre = titre;
         this.ageMin = ageMin;
         this.dateParution = dateParution;
@@ -86,19 +86,19 @@ public abstract class Ouvrage {
         this.genre = genre;
     }
 
-    public Set<Auteur> getLauteurs() {
+    public List<Auteur> getLauteurs() {
         return lauteurs;
     }
 
-    public void setLauteurs(Set<Auteur> lauteurs) {
+    public void setLauteurs(List<Auteur> lauteurs) {
         this.lauteurs = lauteurs;
     }
 
-    public Set<Exemplaire> getLex() {
+    public List<Exemplaire> getLex() {
         return lex;
     }
 
-    public void setLex(Set<Exemplaire> lex) {
+    public void setLex(List<Exemplaire> lex) {
         this.lex = lex;
     }
 
@@ -129,7 +129,6 @@ public abstract class Ouvrage {
         a.getLouvrage().remove(this);
     }
     public void addExemplaire(Exemplaire e){
-        lex.add(e);
         e.setOuvrage(this);
     }
 
@@ -137,7 +136,7 @@ public abstract class Ouvrage {
         lex.remove(e);
         e.setOuvrage(null);
     }
-    public Set<Exemplaire>listerExemplaires(){
+    public List<Exemplaire>listerExemplaires(){
         return lex;
     }
 
@@ -148,4 +147,5 @@ public abstract class Ouvrage {
         }
         return lex2;
     }
+
 }

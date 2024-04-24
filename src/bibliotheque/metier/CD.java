@@ -9,7 +9,7 @@ public class CD extends Ouvrage{
     private byte nbrePlages;
     private LocalTime dureeTotale;
 
-    public CD(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre, long code, byte nbrePlages, LocalTime dureeTotale) {
+    public CD(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre, long code, byte nbrePlages, LocalTime dureeTotale) throws Exception{
         super(titre, ageMin, dateParution, TypeOuvrage.CD, prixLocation, langue, genre);
         this.code=code;
         this.nbrePlages=nbrePlages;
@@ -71,4 +71,6 @@ public class CD extends Ouvrage{
                 ", dureeTotale='" + dureeTotale + '\'' +
                 "} " ;
     }
+
+
 }

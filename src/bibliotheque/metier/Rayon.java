@@ -1,16 +1,23 @@
 package bibliotheque.metier;
 
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
 
-public class Rayon {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+public class Rayon  {
     private String codeRayon;
     private String genre;
-    private Set<Exemplaire> lex = new HashSet<>();
+    private List<Exemplaire> lex = new ArrayList<>();
+
+    public Rayon(String codeRayon) {
+        this.codeRayon = codeRayon;
+    }
 
 
-    public Rayon(String codeRayon, String genre) {
+    public Rayon(String codeRayon, String genre) throws Exception {
+        if(codeRayon==null|| codeRayon.trim().equals("")) throw new Exception("code rayon vide");
+        if(genre==null|| genre.trim().equals("")) throw new Exception("code rayon vide");
         this.codeRayon = codeRayon;
         this.genre = genre;
     }
@@ -36,7 +43,6 @@ public class Rayon {
                 '}';
     }
     public void addExemplaire(Exemplaire e){
-        lex.add(e);
         e.setRayon(this);
     }
 
@@ -60,15 +66,15 @@ public class Rayon {
         this.genre = genre;
     }
 
-    public Set<Exemplaire> getLex() {
+    public List<Exemplaire> getLex() {
         return lex;
     }
 
-    public void setLex(Set<Exemplaire> lex) {
+    public void setLex(List<Exemplaire> lex) {
         this.lex = lex;
     }
 
-    public Set<Exemplaire>listerExemplaires(){
+    public List<Exemplaire>listerExemplaires(){
         return lex;
     }
 

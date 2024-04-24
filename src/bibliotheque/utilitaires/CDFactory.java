@@ -3,20 +3,26 @@ package bibliotheque.utilitaires;
 import bibliotheque.metier.CD;
 import bibliotheque.metier.Ouvrage;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
+import static bibliotheque.utilitaires.Utilitaire.*;
+
+
 public class CDFactory extends OuvrageFactory{
-    protected  long code;
-    protected  byte nbrePlages;
-    protected LocalTime dureeTotale;
-    public Ouvrage create() {
-        super.base();
+    public Ouvrage addDetail(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre){
         System.out.println("code : ");
-        code= sc.nextLong();
+        long code= lireLong();
         System.out.println("nombre de plages :");
-        nbrePlages= sc.nextByte();
-        LocalTime dureeTotale = Utilitaire.lecTime();
-        CD cd =new CD(titre,ageMin,dateParution,prixLocation,langue,genre,code,nbrePlages,dureeTotale);
+        byte nbrePlages= (byte) lireInt();
+        System.out.println("durée en H M S : ");
+        LocalTime dureeTotale = lecTime();
+        CD cd = null;
+        try {
+            cd = new CD(titre,ageMin,dateParution,prixLocation,langue,genre,code,nbrePlages,dureeTotale);
+        } catch (Exception e) {
+            System.out.println("erreur : "+e);
+        }
         return cd;
     }
 }

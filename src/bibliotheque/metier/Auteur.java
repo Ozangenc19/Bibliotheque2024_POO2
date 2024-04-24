@@ -1,21 +1,23 @@
 package bibliotheque.metier;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 import static bibliotheque.metier.TypeOuvrage.LIVRE;
 
 
-public class Auteur {
+public class Auteur  {
+
     private  String nom,prenom;
     private String nationalite;
-    private Set<Ouvrage> louvrage = new HashSet<>();
+    private List<Ouvrage> louvrage = new ArrayList<>();
 
-
-    public Auteur(String nom, String prenom, String nationalite) {
+    public Auteur(String nom, String prenom, String nationalite) throws Exception {
+        if(nom==null || nom.trim().equals("")) throw new Exception ("nom vide");
         this.nom = nom;
         this.prenom = prenom;
         this.nationalite = nationalite;
-
     }
 
     public String getNom() {
@@ -42,11 +44,11 @@ public class Auteur {
         this.nationalite = nationalite;
     }
 
-    public Set<Ouvrage> getLouvrage() {
+    public List<Ouvrage> getLouvrage() {
         return louvrage;
     }
 
-    public void setLouvrage(Set<Ouvrage> louvrage) {
+    public void setLouvrage(List<Ouvrage> louvrage) {
         this.louvrage = louvrage;
     }
 
@@ -84,33 +86,27 @@ public class Auteur {
         o.getLauteurs().remove(this);
     }
 
-    public Set<Ouvrage> listerOuvrages(){
+    public List<Ouvrage> listerOuvrages(){
 
         return louvrage;
     }
 
     public List<Ouvrage> listerOuvrages(TypeOuvrage to){
         List<Ouvrage> lot = new ArrayList<>();
-        for(Ouvrage o : louvrage){
-            if(o.getTo().equals(to)) lot.add(o);
-        }
+        louvrage.stream().filter(o->o.getTo().equals(to)).forEach(o->lot.add(o));
         return lot;
     }
     public List<Livre> listerLivres(TypeLivre tl){
+
         List<Livre>ll = new ArrayList<>();
-        for(Ouvrage o : louvrage){
-            if(o.getTo().equals(LIVRE)) {
-                Livre l = (Livre)o;
-                if(l.getTl().equals(tl)) ll.add(l);
-            }
-        }
+
+        louvrage.stream().filter(o->o.getTo().equals(LIVRE)).filter(o->((Livre)o).getTl().equals(tl)).forEach(o->ll.add((Livre)o));
         return ll;
     }
     public List<Ouvrage> listerOuvrages(String genre){
         List<Ouvrage> lot = new ArrayList<>();
-        for(Ouvrage o : louvrage){
-            if(o.getGenre().equals(genre)) lot.add(o);
-        }
+        louvrage.stream().filter(o->o.getGenre().equals(genre)).forEach(o->lot.add(o));
         return lot;
     }
+
 }
