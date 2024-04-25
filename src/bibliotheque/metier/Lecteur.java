@@ -1,10 +1,9 @@
 package bibliotheque.metier;
 
-
 import java.time.LocalDate;
-import java.util.*;
+import java.util.Objects;
 
-public class Lecteur   {
+public class Lecteur {
     private int numlecteur;
     private  String nom,prenom;
     private LocalDate dn;
@@ -12,10 +11,19 @@ public class Lecteur   {
     private String mail;
     private String tel;
 
-    private List<Location> lloc=new ArrayList<>();
+    private static int numact=1;
 
-    public Lecteur(int numlecteur, String nom, String prenom, LocalDate dn, String adresse, String mail, String tel) throws Exception {
-if(nom==null || prenom==null ||nom.trim().equals("")||prenom.trim().equals("")) throw new Exception("informations invalides");
+    public Lecteur( String nom, String prenom, LocalDate dn, String adresse, String mail, String tel) {
+        this.numlecteur = numact++;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.dn = dn;
+        this.adresse = adresse;
+        this.mail = mail;
+        this.tel = tel;
+    }
+
+    public Lecteur(int numlecteur, String nom, String prenom, LocalDate dn, String adresse, String mail, String tel) {
         this.numlecteur = numlecteur;
         this.nom = nom;
         this.prenom = prenom;
@@ -81,15 +89,7 @@ if(nom==null || prenom==null ||nom.trim().equals("")||prenom.trim().equals("")) 
         this.tel = tel;
     }
 
-    public List<Location> getLloc() {
-        return lloc;
-    }
-
-    public void setLloc(List<Location> lloc) {
-        this.lloc = lloc;
-    }
-
-    @Override
+        @Override
     public String toString() {
         return "Lecteur{" +
                 "numlecteur=" + numlecteur +
@@ -113,22 +113,6 @@ if(nom==null || prenom==null ||nom.trim().equals("")||prenom.trim().equals("")) 
     @Override
     public int hashCode() {
         return Objects.hash(numlecteur);
-    }
-
-    public List<Exemplaire> listerExemplairesEnLocation(){
-        List<Exemplaire> lex = new ArrayList<>();
-        for(Location loc : lloc){
-            if(loc.getDateRestitution()!=null)lex.add(loc.getExemplaire());
-        }
-        return lex;
-    }
-
-    public Set<Exemplaire> listerExemplairesLoues(){
-        Set<Exemplaire> stex = new HashSet<>();
-        for(Location loc : lloc){
-            stex.add(loc.getExemplaire());
-        }
-       return stex;
     }
 
 }

@@ -1,14 +1,10 @@
 package bibliotheque.metier;
 
-
-
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
-public class Exemplaire  {
+import static bibliotheque.mvc.GestionMVC.LOCATIONS;
+
+public class Exemplaire {
 
     private String matricule;
     private String descriptionEtat;
@@ -19,17 +15,11 @@ public class Exemplaire  {
     private String etat;
 
 
-
-    private List<Location> lloc= new ArrayList<>();
-
-
-    public Exemplaire(String matricule, String descriptionEtat,Ouvrage ouvrage) throws Exception {
-        if(ouvrage==null) throw new Exception("ouvrage invalide");
+    public Exemplaire(String matricule, String descriptionEtat,Ouvrage ouvrage){
         this.matricule = matricule;
         this.descriptionEtat=descriptionEtat;
         this.ouvrage = ouvrage;
-
-        this.ouvrage.getLex().add(this);
+        if(ouvrage!=null) this.ouvrage.getLex().add(this);
     }
 
     @Override
@@ -68,7 +58,7 @@ public class Exemplaire  {
     public void setOuvrage(Ouvrage ouvrage) {
         if(this.ouvrage!=null) this.ouvrage.getLex().remove(this);
         this.ouvrage = ouvrage;
-        this.ouvrage.getLex().add(this);
+        if(this.ouvrage!=null) this.ouvrage.getLex().add(this);
     }
 
     public Rayon getRayon() {
@@ -79,14 +69,6 @@ public class Exemplaire  {
         if(this.rayon!=null) this.rayon.getLex().remove(this);
         this.rayon=rayon;
         this.rayon.getLex().add(this);
-    }
-
-    public List<Location> getLloc() {
-        return lloc;
-    }
-
-    public void setLloc(List<Location> lloc) {
-        this.lloc = lloc;
     }
 
     @Override
@@ -104,55 +86,20 @@ public class Exemplaire  {
     }
 
     public Lecteur lecteurActuel(){
-        if(enLocation()) return lloc.get(lloc.size()-1).getLoueur();
+        if(enLocation()) return LOCATIONS.get(this);
         return null;
-    }
-    public List<Lecteur> lecteurs(){
-        List<Lecteur> ll = new ArrayList<>();
-        for(Location l : lloc){
-            if(ll.contains(l.getLoueur())) continue; //par la suite utiliser set
-            ll.add(l.getLoueur());
-        }
-        return ll;
     }
 
     public void envoiMailLecteurActuel(Mail mail){
-        if(lecteurActuel()!=null)
-        {
-            mail.envoi(lecteurActuel().getMail()+".txt");
+        if(lecteurActuel()!=null) {
+            System.out.println("envoi de "+mail+ " à "+lecteurActuel().getMail());
+            mail.envoi(lecteurActuel());
         }
-    }
-    public void envoiMailLecteurs(Mail mail){
-        List<Lecteur>ll=lecteurs();
-        for(Lecteur l: ll){
-              mail.envoi(l.getMail()+".txt");
-            }
-
-    }
-
-    public boolean enRetard(){ //par retard on entend pas encore restitué et en retard
-        if(lloc.isEmpty()) return false;
-        Location l = lloc.get(lloc.size()-1); //la location en cours est la dernière  de la liste, sauf si elle est terminée
-        if(l.getDateRestitution()==null && l.getDateLocation().plusDays(ouvrage.njlocmax()).isAfter(LocalDate.now())) return true;
-        return false;
-    }
-
-    public int joursRetard(){
-        if(!enRetard()) return 0;
-        Location l = lloc.get(lloc.size()-1);//la location en cours est la dernière de la liste
-        LocalDate dateLim = l.getDateLocation().plusDays(ouvrage.njlocmax());
-        int njretard = (int)ChronoUnit.DAYS.between(dateLim, LocalDate.now());
-        return njretard;
+        else System.out.println("aucune location en cours");
     }
 
 
     public boolean enLocation(){
-        if(lloc.isEmpty()) return false;
-        Location l = lloc.get(lloc.size()-1);//la location en cours est la dernière de la liste
-        if(l.getDateRestitution()==null) return true;
-        return false;
+        return LOCATIONS.get(this) !=null ;
     }
-
-
-
 }

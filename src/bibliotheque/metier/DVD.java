@@ -13,7 +13,7 @@ public class DVD extends Ouvrage{
     private byte nbreBonus;
     private Set<String> autresLangues=new HashSet<>();
     private Set<String> sousTitres=new HashSet<>();
-    public DVD(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre, long code, LocalTime dureeTotale, byte nbreBonus) throws Exception {
+    public DVD(String titre, int ageMin, LocalDate dateParution, double prixLocation, String langue, String genre, long code, LocalTime dureeTotale, byte nbreBonus) {
         super(titre, ageMin, dateParution, TypeOuvrage.DVD, prixLocation, langue, genre);
         this.code=code;
        this.dureeTotale=dureeTotale;

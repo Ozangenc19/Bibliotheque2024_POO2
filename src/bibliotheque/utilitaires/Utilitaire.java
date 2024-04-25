@@ -9,17 +9,18 @@ import java.util.Scanner;
 public class Utilitaire {
     private static Scanner sc = new Scanner(System.in);
 
+
     public static int lireInt(){
         int n=0;
         do{
-           try {
-               String ns = sc.nextLine();
-               n=Integer.parseInt(ns);
-               return n;
-           }
-           catch(NumberFormatException e){
-               System.out.println("valeur numérique incorrecte");
-           }
+            try {
+                String ns = sc.nextLine();
+                n=Integer.parseInt(ns);
+                return n;
+            }
+            catch(NumberFormatException e){
+                System.out.println("valeur numérique incorrecte");
+            }
 
         } while(true);
     }
@@ -53,8 +54,8 @@ public class Utilitaire {
         } while(true);
     }
     public static int choixListe(List l){
-       affListe(l);
-       return choixElt(l);
+        affListe(l);
+        return choixElt(l);
     }
 
     public static void affListe(List l){
@@ -67,10 +68,10 @@ public class Utilitaire {
     public static int choixElt(List l){
         int choix;
         do {
-            System.out.println("choix :");
+            System.out.println("choix (0 pour aucun) :");
             choix = lireInt();
 
-        } while(choix <1 || choix > l.size());
+        } while(choix <0 || choix > l.size());
         return choix;
     }
 
@@ -78,7 +79,7 @@ public class Utilitaire {
         do {
             String dateLue= sc.nextLine();
             try {
-               return getDate(dateLue);
+                return getDate(dateLue);
             } catch (Exception e) {
                 System.out.println("date incorrecte");
             }
@@ -95,16 +96,16 @@ public class Utilitaire {
 
     public static LocalTime lecTime(){
         do {
-           try {
-               String[] hms = sc.nextLine().split(" ");
-               int h = Integer.parseInt(hms[0]);
-               int m = Integer.parseInt(hms[1]);
-               int s = Integer.parseInt(hms[2]);
-               return LocalTime.of(h, m, s);
-           }
-           catch (Exception e){
-               System.out.println("temps incorrect");
-           }
+            try {
+                String[] hms = sc.nextLine().split(" ");
+                int h = Integer.parseInt(hms[0]);
+                int m = Integer.parseInt(hms[1]);
+                int s = Integer.parseInt(hms[2]);
+                return LocalTime.of(h, m, s);
+            }
+            catch (Exception e){
+                System.out.println("temps incorrect");
+            }
         }
         while (true);
     }
@@ -121,5 +122,4 @@ public class Utilitaire {
         if(newValue.isBlank()) return oldValue;
         return newValue;
     }
-
 }

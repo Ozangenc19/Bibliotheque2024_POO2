@@ -5,99 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d560596a-dce4-4cf3-874c-afa35d29444c" name="Changes" comment="maj">
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/GestBiblio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/AuteurModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/DAOLecteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/DAORayon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/ExemplaireModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/LecteurModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/LocationModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/OuvrageModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/RayonModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/SpecialAuteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/SpecialExemplaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/SpecialLecteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/SpecialRayon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/Speciallocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/AuteurPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/ExemplairePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/LecteurPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/LocationPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/OuvragePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/Presenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/RayonPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/SpecialAuteurPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/SpecialExemplairePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/SpecialLecteurPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/SpecialLocationPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/SpecialOuvragePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/presenter/SpecialRayonPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/AbstractViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/ExemplaireViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/LecteurViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/LocationViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/OuvrageViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/RayonViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/SpecialAuteurViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/SpecialExemplaireViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/SpecialLecteurViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/SpecialLocationViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/SpecialOuvrageViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/SpecialRayonViewConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/ViewInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Auteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Auteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/CD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/CD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/DVD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/DVD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Exemplaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Exemplaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Lecteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Livre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Ouvrage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/metier/Rayon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/GestionMVC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/AuteurController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/ControllerSpecialAuteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/ControllerSpecialExemplaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/ControllerSpecialOuvrage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/ControllerSpecialRayon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/ExemplaireController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/LecteurController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/OuvrageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/controller/RayonController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAOSpecialAuteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAOSpecialExemplaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAOSpecialOuvrage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/SpecialOuvrage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/DAOSpecialRayon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelAuteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelExemplaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelLecteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/model/AbstractModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelOuvrage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/model/ModelRayon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/observer/Observer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/observer/Subject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AbstractView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/AuteurViewConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/mvp/view/AuteurViewConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/ExemplaireViewConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/LecteurViewConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/OuvrageViewConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/mvc/view/RayonViewConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/CDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/CDFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/CDFactoryBeta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/DVDFactoryBeta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/LivreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/LivreFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/LivreFactoryBeta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/OuvrageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/OuvrageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/Utilitaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliotheque/utilitaires/Utilitaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/ExemplaireMatriculeComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/ExemplaireTitreComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/OuvrageComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliotheque/utilitaires/comparators/RayonComparator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +123,8 @@
       <workItem from="1713909380925" duration="293000" />
       <workItem from="1713909683289" duration="27000" />
       <workItem from="1713969776193" duration="839000" />
+      <workItem from="1713970637843" duration="340000" />
+      <workItem from="1713971558058" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <option name="closed" value="true" />
@@ -400,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713969835879</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="maj">
+      <option name="closed" value="true" />
+      <created>1713970937829</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713970937829</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
